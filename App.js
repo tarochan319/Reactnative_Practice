@@ -44,6 +44,3 @@ const styles = StyleSheet.create({
 //     </NavigationContainer>
 //   );
 // };
-
-// ▼タスク
-// ・Touchableタグは要修正
