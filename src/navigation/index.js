@@ -1,4 +1,3 @@
-// 【これなんの役割？】
 
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
@@ -13,8 +12,9 @@ const RootStack = createStackNavigator();
 
 const RootStackScreen = () => {
   return (
-    <NavigationContainer>
+    <NavigationContainer> 
       <RootStack.Navigator>
+        {/* 一番上のページが初期表示される。 */}
         <RootStack.Screen name="Title" component={TitleScreen} />
         <RootStack.Screen name="Top" component={TopScreen} />
         <RootStack.Screen name="Meigen" component={MeigenScreen} />

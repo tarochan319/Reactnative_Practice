@@ -1,4 +1,6 @@
-// In App.js in a new project
+// タスク
+// ・画面遷移の実装（下記参照）
+//https://fintan-contents.github.io/mobile-app-crib-notes/react-native/learn/basic-concepts/react-navigation-basics/
 
 import "react-native-gesture-handler";
 import * as React from "react"; //必要
@@ -13,34 +15,4 @@ import CompleteScreen from "../oyaji_project/src/screens/CompleteScreen";
 
 const Stack = createStackNavigator();
 
-export default function App() {
-  return (
-    <View style={styles.title}>
-      <Text>おやじの言葉</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  title: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
-
-// export default App = () => {
-//   return (
-//     <NavigationContainer>
-//       <Stack.Navigator>
-//         <Stack.Screen name="Title" component={TitleScreen} />
-//         <Stack.Screen name="Top" component={TopScreen} />
-//         <Stack.Screen name="Meigen" component={MeigenScreen} />
-//         <Stack.Screen name="ToDo" component={ToDoScreen} />
-//         <Stack.Screen name="Complete" component={CompleteScreen} />
-//       </Stack.Navigator>
-//     </NavigationContainer>
-//   );
-// };
