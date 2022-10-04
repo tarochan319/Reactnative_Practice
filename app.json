@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "oyaji_project",
-    "slug": "oyaji_project",
+    "name": "camp_info",
+    "slug": "camp_info",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,6 +28,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": ""
   }
 }
