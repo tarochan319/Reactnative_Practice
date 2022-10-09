@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { StyleSheet, View, FlatList } from "react-native";
-import NewsInfo from "./Component/News";
+import CampNews from "./Component/News";
 import Constants from "expo-constants";
 import axios from "axios";
 
@@ -28,11 +28,11 @@ export default function App() {
         renderItem ={" "}
         {({ item }) => (
           // ▼CampNewsは自作コンポーネント
-          <NewsInfo>
+          <CampNews>
             imageuri= {item.urlToImage}
             title= {item.title}
             subtext= {item.publishedAt}
-          </NewsInfo>
+          </CampNews>
         )}
         keyExtractor={(item, index) => index.toString()}
       </FlatList>

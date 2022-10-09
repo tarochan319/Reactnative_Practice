@@ -1,4 +1,3 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 
@@ -10,7 +9,7 @@ const NewsInfo = ({ imageuri, title, subtext }) => {
         <Text style={styles.midashi}>{title}</Text>
         <Text style={styles.subtext}>{subtext}</Text>
       </View>
-      <View style={styles.image_bpx}>
+      <View style={styles.image_box}>
         <Image
           source={{
             uri: imageuri,
@@ -40,7 +39,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
 
-  image_bpx: {
+  image_box: {
     width: 100,
     backgroundColor: "black",
   },
